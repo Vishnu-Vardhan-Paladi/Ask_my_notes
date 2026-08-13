@@ -1,0 +1,6 @@
+NOTES/
+__pycache__/
+*.pyc
+.git/
+*.code-workspace
+.env
