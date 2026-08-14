@@ -11,37 +11,72 @@
 
 <body>
 
-    <header>
+    <div class="container">
+
+        <!-- Title -->
         <h1>AskMyNotes</h1>
-        <p>Ask questions from your notes</p>
-    </header>
 
-    <main>
 
-        <section class="chat-container">
+        <!-- Upload PDF -->
+        <div class="section">
+
+            <label for="pdfFile" class="label">
+                Upload your notes (PDF)
+            </label>
+
+            <input
+                type="file"
+                id="pdfFile"
+                accept=".pdf,application/pdf"
+            >
+
+            <p id="fileName" class="file-name">
+                Choose file
+            </p>
+
+        </div>
+
+
+        <!-- Question -->
+        <div class="section">
+
+            <label for="questionInput" class="label">
+                Your question
+            </label>
+
+            <textarea
+                id="questionInput"
+                placeholder="What is this?"
+            ></textarea>
+
+        </div>
+
+
+        <!-- Ask Button -->
+        <button id="askButton">
+            Ask
+        </button>
+
+
+        <!-- Answer -->
+        <div class="section answer-section">
+
+            <div class="label">
+                Answer
+            </div>
 
             <div id="chatBox" class="chat-box">
+
                 <div class="message bot">
-                    Hello! Upload your notes and ask me a question.
+                    <!-- Answer will appear here -->
                 </div>
-            </div>
-
-            <div class="input-area">
-
-                <textarea
-                    id="questionInput"
-                    placeholder="Ask something about your notes..."
-                ></textarea>
-
-                <button id="askButton">
-                    Ask
-                </button>
 
             </div>
 
-        </section>
+        </div>
 
-    </main>
+    </div>
+
 
     <script src="script.js"></script>
 
